@@ -1,0 +1,34 @@
+.bg_blue {
+    background-color: lightblue;
+}
+
+.logInPage {
+    display: flex;
+    margin: auto auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginform {
+    margin: auto auto;
+}
+
+.margin_auto {
+    margin: auto auto;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label>input {
+    width: 250px;
+}

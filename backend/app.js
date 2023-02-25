@@ -22,7 +22,8 @@ app.post('/init', (req, res) => {
 app.use('/signup', require("./routes/signup"));
 app.use('/login', require("./routes/login"));
 app.use('/getuser', require("./routes/getUser"));
-// app.use('/recipe', require("./routes/recipe"));
+app.use('/recipe', require("./routes/recipe"));
+app.use('/json', require("./routes/json"));
 
 app.get('/*', (req, res) => {
     // res.writeHead(301, { Location: "https://github.com/rjrajujha" });

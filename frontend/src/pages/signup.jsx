@@ -61,16 +61,16 @@ const SignUp = () => {
 
     return (
         <>
-            <div className={Styles.flex_col}>
+            <div className={`${Styles.flex_col} ${Styles.border} `}>
 
-                <div className={Styles.flex && Styles.signuphead}>
+                <div className={`${Styles.flex} ${Styles.signuphead} `}>
                     <p onClick={LogIn} className={Styles.backtologin}> &lt; </p>  <p className={Styles.signuptext}>SIGN UP</p>
                 </div>
 
-                <form onSubmit={(e) => { handleRegister(e) }} className={Styles.signupform} >
+                <form onSubmit={(e) => { handleRegister(e) }} className={Styles.margin_auto} >
 
                     <input type='email' value={username} onChange={(e) => { setUserName(e.target.value) }}
-                        placeholder="email" required /><br /><br />
+                        placeholder="yourname@domain.net" required /><br /><br />
 
                     <input type='text' value={password} onChange={(e) => { setPassword(e.target.value) }}
                         placeholder="Password" required /><br /><br />
@@ -86,7 +86,7 @@ const SignUp = () => {
                         I agree <a href="https://github.com/rjrajujha">terms & conditions</a>
                     </label>
                     <br />
-                    <input type='submit' value='Register' />
+                    <input type='submit' value='Register' className={Styles.btn} />
                 </form>
             </div>
         </>

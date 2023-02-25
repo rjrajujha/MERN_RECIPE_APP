@@ -1,0 +1,53 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head>button {
+    width: 80px;
+    height: 40px;
+    background-color: gray;
+    margin: 20px 5px 0 0;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin: 2px 2px;
+    border-radius: 8px;
+}
+
+.card {
+    min-width: fit-content;
+    width: 400px;
+    background-color: grey;
+    margin: 5px 2px;
+}
+
+.card>img {
+    display: flex;
+    width: 250px;
+    height: auto;
+    margin: auto auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin_auto {
+    margin: auto auto;
+}
+
+.searchbox {
+    height: 35px;
+    width: 400px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: gainsboro;
+}
