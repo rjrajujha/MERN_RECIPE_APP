@@ -3,11 +3,11 @@ const checkId = (usrid) => {
 
     // check valid username
     if (usrid.length < 4) {
-        return valid = "username must be at least 4 characters"
+        return valid = "Email-ID must be at least 4 characters"
     }
 
-    if (usrid.length > 10) {
-        return valid = "username should not more then 10 characters"
+    if (usrid.length > 30) {
+        return valid = "Email-ID should not more then 30 characters"
     }
 
     return valid;

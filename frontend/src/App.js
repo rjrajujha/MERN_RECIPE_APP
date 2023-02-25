@@ -1,6 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 
+//Pages-------------------
+import LogIn from "./pages/login";
+import Register from "./pages/signup";
+import Recipe from "./pages/recipe";
+import NoPage from "./pages/nopage";
+
 const APIUrl = process.env.REACT_APP_APIURL;
 
 function App() {
@@ -26,7 +32,14 @@ function App() {
 
   return (
     <div className="App">
-      <p>App is working</p>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LogIn />} />
+          <Route path="/reg" element={<Register />} />
+          <Route path="/recipe" element={<Recipe />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
